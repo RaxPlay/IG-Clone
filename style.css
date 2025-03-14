@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     background-color: black;
     color: white;
+    font-family: "Roboto", sans-serif;
 }
 .page-logo{
     width: 50px;
     margin: 10px;
+    position: fixed;
+    left: 4%;
 }
 nav{
-    margin-top: 20px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -19,16 +24,17 @@ nav a{
     text-decoration: none;
     padding-left: 5px;
     padding-bottom: 3px;
-    width: 200px;
+    width: 220px;
     height: 50px;
     border-radius: 10px;  
+    border: 1px solid transparent;
 }
 nav h3{
     margin-left: 20px;
     color: white;
 }
 nav a:hover{
-    border: 1px solid rgb(44, 41, 41); 
+    border: rgb(44, 41, 41); 
     background-color: rgb(44, 41, 41);
     
     transition: 0.25s;
@@ -39,4 +45,73 @@ i{
 .account-img{
     width: 30px;
     border-radius: 50%;
+}
+.bottom-bar{
+    position: absolute;
+    top: 73%;
+    position: fixed;
+}
+.vl {
+    position: absolute;
+    top: -1%;
+    left: 13%;
+    border-left: 1px solid rgb(38, 38, 38);
+    height: 101vh;
+}
+.middle-section{ 
+    justify-self: right;
+    width: 1600px;
+}
+.stories{
+    justify-self: center;
+}
+.stories .account-img{
+    height: 50px;
+    width: 50px;
+    justify-self: center;
+    border: 3px solid ;
+}
+.fyp{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.user-section{
+    display: inline-flex;
+    position: relative;
+    left: 75px;
+    top: 20px;
+}
+.user-section h3{
+    margin: 5px;
+    padding-left: 10px;
+}
+.fyp .image{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    top: 60px;
+    left: -70px;
+    border-radius: 10px;
+}
+.interactions{
+    position: relative;
+    top: 75px;
+    left: -350px;
+}   
+.interactions button{
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+
+    transition: 0.25s;
+}
+.interactions .fa-solid:hover{    
+    color: gray;
+}
+.content-description{
+    position: relative;
+    top: 80px;
+    left: -230px;
 }
